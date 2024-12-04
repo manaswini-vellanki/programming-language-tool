@@ -1,0 +1,89 @@
+[5:27 PM, 7/28/2024] Samhitha Balusu: Ha
+[5:27 PM, 7/28/2024] Mallika: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+    body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin:0%;
+    background-image: url('https://img.freepik.com/free-vector/geometric-gradient-futuristic-background_23-2149116406.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0%;
+}
+.signup-container{
+    padding: 20px;
+    width: 425px;
+    height: 425px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    background-color: rgb(80, 8, 8);
+    margin: 400px;
+    border-radius: 15px;
+    margin-top: 325px;
+    margin-left: 950px;
+}
+.signup-container h1{
+    text-align: center;
+    margin-top: 0%;
+    font-size: 35px;
+}
+label{
+    padding-left: 35px;
+    font-size: 20px;
+    color: rgb(238, 223, 232);
+}
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password]{
+    border-radius: 5px;
+    height: 35px;
+    width: 270px;
+    text-align: center;
+    margin-left: 35px;
+    background-color: antiquewhite;
+}
+button{
+    border-color: black;
+    color: rgb(238, 223, 232);
+    border-style: double;
+    border-radius: 6px;
+    height: 35px;
+    width: 270px;
+    background-color: rgb(41, 16, 16);
+    cursor: pointer;
+    border-width:2px;
+    margin-top: 15px;
+    margin-left: 35px; 
+}
+button:hover{
+    background-color: black;
+    color: white;
+    border-color: antiquewhite;
+}
+</style>
+</head>
+<body>
+    
+    <div class="signup-container">
+        <form action="/signup" method="POST">
+            <h1>Signup</h1>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phonenumber" name="phone" placeholder="Enter your phone number" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter password" required><br>
+            <button type="submit">Sign Up</button> 
+        </form>
+    </div>
+</body>
+</html>

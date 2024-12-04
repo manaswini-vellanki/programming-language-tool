@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .quiz-container { max-width: 600px; margin: 0 auto; padding: 20px; }
+    .quiz-question { margin-bottom: 15px; }
+    #quiz-feedback { margin-top: 20px; }
+
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+footer{
+    .p{
+        text-align: center;
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flashcard {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.flashcard:hover {
+    transform: rotateY(180deg);
+}
+
+.flashcard .front,
+.flashcard .back {
+    display: none;
+}
+
+.flashcard:hover .front {
+    display: none;
+}
+
+.flashcard:hover .back {
+    display: block;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+.home {
+    text-align: center;
+    padding: 20px;
+}
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.language {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+}
+
+.language:hover {
+    transform: scale(1.05);
+}
+
+.language img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.language h3 {
+    margin-top: 10px;
+}
+
+.language p {
+    margin: 10px 0;
+}
+
+.language .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.language .btn:hover {
+    background-color: #0056b3;
+}
+/* styles.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+/* Select styling */
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Translation result styling */
+.translation-result {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.translation-result h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.translation-result p {
+    font-size: 18px;
+}
+

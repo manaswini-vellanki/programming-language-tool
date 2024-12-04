@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+    body{
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0%;
+    display: flex;
+    margin:0%;
+    background-image: url('https://img.freepik.com/free-vector/geometric-gradient-futuristic-background_23-2149116406.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-container{
+    padding: 20px;
+    width: 200px;
+    height: 230px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    background-color: rgb(80, 8, 8);
+    margin-right: 25px;
+    border-radius: 15px;
+    margin-top: 225px;
+}
+.login-container h1{
+    text-align: center;
+    margin-top: 0;
+    font-size: 25px;
+    color: rgb(238, 223, 232);
+}
+label{
+    padding-left: 10px;
+    font-size: 15px;
+    color: rgb(238, 223, 232);
+}
+input[type=text]{
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+    text-align: center;
+    margin-left: 5px;
+    background-color: antiquewhite;
+}
+input[type=password]{
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+    text-align: center;
+    margin-left:5px;
+    background-color: antiquewhite;
+}
+button{
+    color: rgb(238, 223, 232);
+    border-style: double;
+    font-size: 15px;
+    border-radius: 6px;
+    height: 25px;
+    width: 200px;
+    background-color: rgb(41, 16, 16);
+    cursor: pointer;
+    border-width:2px;
+    margin-top: 15px;
+    margin-left: 5px;   
+}
+button:hover{
+    color: white;
+    background-color: black;
+    border-color: antiquewhite;
+}
+.login-container .signup-link{
+    margin-top: 10px;
+    display:block;
+    margin-left: 5px;
+    color: antiquewhite;
+    font-size: 13px;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form action="/login" method="POST">
+            <h1>Login</h1>
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" id="email" placeholder="Enter your email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            <br>
+            <button type="submit" id="login">Login</button>
+            <a href="/signup" class="signup-link">Don't have an account? Signup </a>
+        </form>
+    </div>
+</body>
+</html>

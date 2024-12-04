@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Syntax Rules</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+
+
+        .language-buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .language-buttons button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .language-buttons button:hover {
+            background-color: #0056b3;
+        }
+
+        .syntax-rules {
+            display: none;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .syntax-rules.active {
+            display: block;
+        }
+
+        h2 {
+            color: #007bff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #e9ecef;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        ul li b {
+            color: #343a40;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <%- include('header') %>
+    <header>
+        <h1>Programming Syntax Rules</h1>
+    </header>
+
+    <div class="language-buttons">
+        <button onclick="showSyntax('java')">Java</button>
+        <button onclick="showSyntax('python')">Python</button>
+        <button onclick="showSyntax('c')">C</button>
+        <button onclick="showSyntax('cpp')">C++</button>
+    </div>
+
+    <!-- Java Syntax Rules -->
+    <div id="java" class="syntax-rules">
+        <h2>Java Syntax Rules</h2>
+        <ul>
+            <li><b>Basic Structure:</b> Every Java program must have a class and a `main()` method.</li>
+            <li><b>Class Declaration:</b> `public class ClassName { public static void main(String[] args) { ... } }`</li>
+            <li><b>Data Types:</b> Includes primitive types like `int`, `float`, `char`, `boolean`, and objects.</li>
+            <li><b>Control Statements:</b> Supports `if`, `else`, `switch`, `for`, `while`, and `do-while` loops.</li>
+            <li><b>Inheritance:</b> Use `extends` keyword for subclassing.</li>
+            <li><b>Interfaces:</b> Use `implements` keyword to implement interfaces.</li>
+            <li><b>Exception Handling:</b> Use `try-catch-finally` blocks for exception handling.</li>
+            <li><b>Packages:</b> Use `import package_name.*;` to include packages.</li>
+            <li><b>Comments:</b> `//` for single-line and `/* */` for multi-line comments.</li>
+        </ul>
+    </div>
+
+    <!-- Python Syntax Rules -->
+    <div id="python" class="syntax-rules">
+        <h2>Python Syntax Rules</h2>
+        <ul>
+            <li><b>Indentation:</b> Code blocks are defined by indentation instead of braces.</li>
+            <li><b>Variables:</b> No need to declare the type explicitly. `x = 5` is valid.</li>
+            <li><b>Functions:</b> Use `def` keyword: `def function_name(params):`</li>
+            <li><b>Loops:</b> Includes `for` and `while`. `for x in range(10): ...`</li>
+            <li><b>Conditionals:</b> `if-elif-else` is used for branching.</li>
+            <li><b>Lists, Tuples, Dictionaries:</b> Python supports dynamic arrays, immutable sequences, and key-value pairs.</li>
+            <li><b>Classes:</b> `class ClassName: def __init__(self): ...`</li>
+            <li><b>Modules:</b> Import using `import module_name`.</li>
+            <li><b>Comments:</b> `#` for single-line comments.</li>
+        </ul>
+    </div>
+
+    <!-- C Syntax Rules -->
+    <div id="c" class="syntax-rules">
+        <h2>C Syntax Rules</h2>
+        <ul>
+            <li><b>Basic Structure:</b> A program starts with `#include` for header files and `int main()`.</li>
+            <li><b>Data Types:</b> Includes `int`, `float`, `char`, `double`, etc.</li>
+            <li><b>Control Statements:</b> `if`, `else`, `switch`, `for`, `while`, and `do-while` loops are supported.</li>
+            <li><b>Functions:</b> Declared with return type, name, and parameters: `int add(int a, int b) { return a + b; }`</li>
+            <li><b>Pointers:</b> Store the address of variables using `*` and `&`.</li>
+            <li><b>Arrays:</b> `int arr[5] = {1, 2, 3, 4, 5};`</li>
+            <li><b>Preprocessor:</b> Use `#define` and `#include` for macros and headers.</li>
+            <li><b>Comments:</b> `//` for single-line and `/* */` for multi-line comments.</li>
+        </ul>
+    </div>
+
+    <!-- C++ Syntax Rules -->
+    <div id="cpp" class="syntax-rules">
+        <h2>C++ Syntax Rules</h2>
+        <ul>
+            <li><b>Program Structure:</b> Includes `#include` for libraries and `int main()` as the entry point.</li>
+            <li><b>Classes and Objects:</b> Defined with `class ClassName { public: ... };`</li>
+            <li><b>Inheritance:</b> Supported using `:` for `public`, `protected`, and `private` inheritance.</li>
+            <li><b>Templates:</b> Generic programming using `template <typename T> T function(T arg) { ... }`</li>
+            <li><b>STL:</b> Standard Template Library provides `vector`, `map`, `set`, and other containers.</li>
+            <li><b>Function Overloading:</b> Multiple functions with the same name but different parameters.</li>
+            <li><b>Control Statements:</b> `if`, `else`, `switch`, `for`, `while`, `do-while` are supported.</li>
+            <li><b>Comments:</b> `//` for single-line and `/* */` for multi-line comments.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Syntax Rules Guide. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to Toggle Display -->
+    <script>
+        function showSyntax(language) {
+            // Hide all syntax rule sections
+            document.querySelectorAll('.syntax-rules').forEach(function(el) {
+                el.classList.remove('active');
+            });
+
+            // Show the selected language's syntax rules
+            document.getElementById(language).classList.add('active');
+        }
+
+        // Set Java syntax to be visible by default on page load
+        document.getElementById('java').classList.add('active');
+    </script>
+
+</body>
+</html>
